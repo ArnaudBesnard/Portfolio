@@ -1,0 +1,41 @@
+body {
+    background-color:black;
+}
+@font-face {
+    font-family: 'Neon';
+    src: url('../fonts/Neon Nanoborg.otf');
+}
+.bg-dark {
+    background-color: black !important;
+}
+h1{
+    text-align:  center;
+    color:white;
+}
+#myName{
+    font-size: 2.5em;
+    font-family: "Neon", serif;
+    margin-left:50px;
+}
+.contenu{
+    margin-top:100px;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    width:100%;
+    height:500px;
+}
+.ml3{
+    font-family: "Neon";
+    color: white;
+    font-weight: 900;
+    font-size: 5em;
+    margin-left:30%;
+    margin-top:180px;
+    position:fixed;
+    z-index:999;
+}
+.text{
+    color:white;
+    width:80%;
+    margin:auto;
+}
