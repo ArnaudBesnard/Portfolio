@@ -2,12 +2,30 @@
 
 {% block body %}
     <div class="contenu">
-        <h1 class="ml3">Developpeur Symfony</h1>
+        <h1 class="ml3">Developpeur PHP Symfony</h1>
     </div>
-    <h1>Compétences</h1>
-    <div class="text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at nisl sed justo facilisis eleifend non vitae est. Sed tincidunt libero id sollicitudin gravida. Praesent eleifend lectus gravida, vestibulum tortor vitae, tempor velit. Phasellus vel lorem in mauris dignissim viverra. Proin suscipit lectus sed dolor hendrerit aliquam. Integer eleifend orci in quam vestibulum, at blandit urna finibus. Sed ut dolor elit. Pellentesque ullamcorper turpis eu ipsum fringilla hendrerit. Nam mollis nec orci eget luctus.
-
-        Cras lobortis turpis eget tellus cursus accumsan. Cras luctus venenatis dui, id elementum velit egestas at. Aenean sed odio nunc. Curabitur consectetur interdum malesuada. Aliquam vitae dolor massa. Quisque augue est, sodales in porta et, commodo eu augue. Proin dignissim purus eleifend, aliquet dolor id, rhoncus velit.
+    <div class="contenuPage">
+    <div id="aPropos"><h1>A propos</h1></div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <div class="photo"><img id="maPhoto" src="{{ asset('public/img/arnaudBesnard.png') }}" alt="PhotoArnaudBesnard" /></div>
+            <h1><p id="titrePropos">Développer, plus qu'un métier, une passion !</h1></p>
+        </div>
+        <div class="col-md-6"><div class="text">
+        Bonjour et bienvenue sur mon portfolio. Je m'appelle Arnaud, 35 ans,
+        Morbihannais d'adoption, et passionné par le développement et l'intégration 
+        web.Après une expérience de 6 ans dans la communication et 7 ans dans le domaine de l'imprimerie, 
+        j'ai décidé de me reconvertir et prendre une voie qui m'était destinée : le développement web.<br />
+        En effet, passionné depuis mon adolescence, 
+        j'ai toujours pris un grand plaisir à développer des sites web sur divers projets personnels.
+        C'est donc en toute logique que j'ai entamé en 2018 une formation de développeur intégrateur 
+        d'applications web en formation à distance avec OpenClassRooms.
+        J'ai aujourd'hui terminé cette formation et je suis donc, logiquement à la recherche d'un poste de 
+        développeur et plus particulièrement dans le développement back end PHP ! Bonne visite et n'hésitez 
+        pas à me contacter via le formulaire de contact dispo dans le menu !</div></div>
+    </div>
+    <hr />
+    
     </div>
 {% endblock %}

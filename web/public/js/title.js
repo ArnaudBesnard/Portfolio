@@ -7,10 +7,10 @@ $('.ml3').each(function(){
 anime.timeline({loop: false})
     .add({
         targets: '.ml3 .letter',
-        opacity: [0,1],
+        opacity: [0,2],
         easing: "easeInOutQuad",
-        duration: 2250,
-        delay: function(el, i) {
-            return 150 * (i+1)
-        }
-    });
+    duration: 2250,
+    delay: function(el, i) {
+    return 200 * (i+1)
+}
+});

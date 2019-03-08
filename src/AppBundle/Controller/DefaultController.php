@@ -18,4 +18,18 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+    /**
+     * @Route("/competences", name="competences")
+     */
+    public function competencesAction()
+    {
+        return $this->render('default/competences.html.twig');
+    }
+    /**
+     * @route("/realisations", name="realisations")
+     */
+    public function realisationsAction()
+    {
+        return $this->render('default/realisations.html.twig');
+    }
 }
