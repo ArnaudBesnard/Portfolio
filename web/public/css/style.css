@@ -35,8 +35,8 @@ h1 {
     
 }
 
-h2 {
-    text-align: left;
+.titre {
+    text-align: center;
     color: black;
     font-size: 22px;
 }
@@ -58,10 +58,18 @@ hr {
 
 #titrePropos {
     margin-top: 50px;
-    
-
 }
 
+.prestations{
+    /*font-family: "neon";*/
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+
+}
 #maPhoto {
     width: 150px;
     height: auto;
@@ -113,6 +121,7 @@ hr {
     width: 100%;
     margin: auto;
     margin-top: 280px;
+    text-align: center;
 }
 
 .text {
