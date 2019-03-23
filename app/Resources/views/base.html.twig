@@ -30,14 +30,20 @@
                 <li class='nav-item'>
                     <a class='nav-link' href='{{ path('homepage') }}'><i class='fas fa-home'></i> Accueil</a>
                 </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='{{ path('homepage') }}#aPropos'><i class='fas fa-code'></i> A propos</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='{{ path('competences') }}'><i class='fas fa-book-reader'></i> Mon CV</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class='fas fa-code'></i> A propos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{{ path('homepage') }}#aPropos">A propos</a>
+                        <a class="dropdown-item" href="{{ path('competences') }}">Mon CV</a>
+                    </div>
                 </li>
                 <li class='nav-item'>
                     <a class='nav-link' href='{{ path('realisations') }}'><i class='fas fa-book'></i> Réalisations</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='{{ path('realisations') }}'><i class='fas fa-book'></i> Prestations</a>
                 </li>
                 <li class='nav-item'>
                     <a class='nav-link' href='#'><i class='fas fa-at'></i> Me contacter</a>

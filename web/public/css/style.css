@@ -16,6 +16,7 @@ body {
 /*********************** HEADER ***********************/
 .bg-dark {
     background-color: black !important;
+    border-bottom: 1px solid gray;
 }
 
 .nav-link:hover {
@@ -63,11 +64,12 @@ hr {
 .prestations{
     /*font-family: "neon";*/
     font-size: 16px;
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    width: 80%;
+    color:gray;
+    padding: 10px;
+    width: 75%;
     margin: auto;
     text-align: justify;
+    z-index: 999;
 
 }
 #maPhoto {
@@ -133,6 +135,7 @@ hr {
     width: 80%;
     margin: auto;
     text-align: justify;
+    box-shadow: 8px 8px 8px rgb(102, 102, 102);
 }
 
 .text-realisations {
