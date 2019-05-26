@@ -6,8 +6,11 @@ html {
 body {
     /*background-color:black;*/
     background-color: rgba(0, 0, 0, 0.90);
+<<<<<<< HEAD
     color:white;
     margin: 0;
+=======
+>>>>>>> 87df86b44f41bea17ac1aef0b5081713883e46b7
 }
 
 @font-face {
@@ -54,6 +57,7 @@ hr {
 }
 
 #myName {
+<<<<<<< HEAD
     font-size: 2.5em;
     font-family: "Neon", serif;
     margin-left: 50px;
@@ -61,6 +65,12 @@ hr {
 #myName:hover{
     border-bottom: 2px solid orange;
 }
+=======
+    font-size: 3em;
+    font-family: "Neon", serif;
+    margin-left: 50px;
+}
+>>>>>>> 87df86b44f41bea17ac1aef0b5081713883e46b7
 
 #titrePropos {
     margin-top: 50px;
@@ -140,6 +150,7 @@ hr {
     width: 80%;
     margin: auto;
     text-align: justify;
+<<<<<<< HEAD
     /*box-shadow: 8px 8px 8px rgb(102, 102, 102);*/
 }
 .contact-background {
@@ -152,6 +163,9 @@ hr {
     margin: auto;
     text-align: justify;
     /*box-shadow: 8px 8px 8px rgb(102, 102, 102);*/
+=======
+    box-shadow: 8px 8px 8px rgb(102, 102, 102);
+>>>>>>> 87df86b44f41bea17ac1aef0b5081713883e46b7
 }
 
 .text-realisations {
@@ -167,6 +181,7 @@ hr {
 .logosnav {
     width: 680px;
     margin: auto;
+<<<<<<< HEAD
 }
 #P1{
     width: 300px;
@@ -180,4 +195,10 @@ footer{
 }
 .pb-5, .py-5 {
     padding-bottom: 1rem!important;
+=======
+}
+#P1{
+    width: 300px;
+    height: 198px;
+>>>>>>> 87df86b44f41bea17ac1aef0b5081713883e46b7
 }
