@@ -35,6 +35,7 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    form_themes: ['bootstrap_4_layout.html.twig']
 
 # Doctrine Configuration
 doctrine:
@@ -69,3 +70,24 @@ swiftmailer:
 sensio_framework_extra:
    router:
         annotations: false
+
+# app/config/config.yml
+mremi_contact:
+    store_data:            false
+    contact_class:         Mremi\ContactBundle\Model\Contact
+
+    form:
+        type:              mremi_contact
+        name:              contact_form
+        validation_groups: [Default]
+        subject_provider:  mremi_contact.subject_provider.noop
+
+    email:
+        mailer:            mremi_contact.mailer.twig_swift
+        from:
+            - { address: john.doe@example.com, name: "John Doe" }
+            - { address: foo.bar@example.com }
+        to:
+            - { address: webmaster@example.com, name: "Webmaster" }
+            - { address: moderator@example.com }
+        template:          MremiContactBundle:Contact:email.txt.twig
