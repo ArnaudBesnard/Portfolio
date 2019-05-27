@@ -74,8 +74,12 @@ hr {
     width: 75%;
     margin: auto;
     text-align: justify;
-    z-index: 999;
-
+    z-index: 999
+}
+#titre_presta{
+    text-align:center;
+    color: gray;
+    font-weight: bold;
 }
 #maPhoto {
     width: 150px;
@@ -167,6 +171,11 @@ hr {
 .logosnav {
     width: 680px;
     margin: auto;
+}
+#logos_technos {
+    display:block;
+    width:838px;
+    margin:auto;
 }
 #P1{
     width: 300px;

@@ -33,6 +33,13 @@ class DefaultController extends Controller
     {
         return $this->render('default/realisations.html.twig');
     }
+        /**
+     * @route("/prestations", name="prestations")
+     */
+    public function prestationsAction()
+    {
+        return $this->render('default/prestations.html.twig');
+    }
     /**
      * @route("/contact", name="contact")
      */
