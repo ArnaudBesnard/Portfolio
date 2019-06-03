@@ -225,5 +225,15 @@ footer {
         margin-top:100px;
         width:90%;
     }
+    #logos_technos{
+        display:none;
+    }
+    #P1{
+        width: 200px;
+        height: auto;
+    }
+    .text_experience{
+        display:none;
+    }
 
 }
