@@ -3,6 +3,7 @@
 
 {% block body %}
     <h1 id="realisations">Me contacter</h1>
+    <div class="center">Pour toute question ou renseignement, n'hésitez pas à me contacter via ce formulaire.</div>
     {% if app.session.flashBag.has('ajoute') %}
         <div class="alert alert-fail">
             {% for msg in app.session.flashBag.get('ajoute') %}
@@ -15,29 +16,29 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 {{ form_start(form) }}
-            <div>
-                {{ form_row(form.name) }}
-                {{ form_errors(form.name) }}
+                <div>
+                    {{ form_row(form.name) }}
+                    {{ form_errors(form.name) }}
+                </div>
+
+                <div>
+                    {{ form_row(form.email) }}
+                    {{ form_errors(form.email) }}
+                </div>
+                <div>
+                    {{ form_row(form.subject) }}
+                    {{ form_errors(form.subject) }}
+                </div>
+                <div>
+                    {{ form_row(form.message) }}
+                    {{ form_errors(form.message) }}
+                </div>
+
+                <input type="submit" value="Envoyer">
+
+                {{ form_end(form) }}
             </div>
-    
-    <div>
-        {{ form_row(form.email) }}
-        {{ form_errors(form.email) }}
+            <div class="col-md-3"></div>
+        </div>
     </div>
-    <div>
-        {{ form_row(form.subject) }}
-        {{ form_errors(form.subject) }}
-    </div>
-    <div>
-        {{ form_row(form.message) }}
-        {{ form_errors(form.message) }}
-    </div>
-
-    <input type="submit" value="Envoyer">
-
-    {{ form_end(form) }}
-    </div>
-    <div class="col-md-3"></div>
-</div>
-</div>
 {% endblock %}

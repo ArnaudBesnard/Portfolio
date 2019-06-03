@@ -16,7 +16,7 @@ class DefaultController extends Controller
     {
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')) . DIRECTORY_SEPARATOR,
         ]);
     }
     /**
@@ -33,7 +33,7 @@ class DefaultController extends Controller
     {
         return $this->render('default/realisations.html.twig');
     }
-     /**
+    /**
      * @route("/mentionslegales", name="mentionslegales")
      */
     public function mentionsLegalesAction()
@@ -41,8 +41,8 @@ class DefaultController extends Controller
         return $this->render('default/mentions_legales.html.twig');
     }
     /**
-    * @route("/prestations", name="prestations")
-    */
+     * @route("/prestations", name="prestations")
+     */
     public function prestationsAction()
     {
         return $this->render('default/prestations.html.twig');
