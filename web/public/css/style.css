@@ -71,6 +71,8 @@ hr {
 
 #titrePropos {
     margin-top: 50px;
+    font-style: italic;
+    font-family: "Neon", serif;
 }
 
 .prestations {
@@ -150,7 +152,6 @@ hr {
 }
 
 .text {
-    /*font-family: "neon";*/
     font-size: 16px;
     color: black;
     background-color: white;
@@ -235,5 +236,14 @@ footer {
     .text_experience{
         display:none;
     }
+    .text {
+        font-size: 14px;
+        color: black;
+        background-color: white;
+        padding: 20px;
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        /*box-shadow: 8px 8px 8px rgb(102, 102, 102);*/
 
 }

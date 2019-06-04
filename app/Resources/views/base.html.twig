@@ -2,8 +2,27 @@
 <html>
 
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}"/>
+        <meta content="Portfolio Arnaud Besnard - développeur web" name="description"/>
+        <meta content="portfolio, développeur, création, internet, symfony, applications, web" name="keywords"/>
+        <meta content="all" name="robots"/>
+        <meta
+        content="fr" name="language"/>
+        <!--Twitter card-->
+        <meta content="summary" name="twitter:card"/>
+        <meta content="@arnaudbesnard" name="twitter:creator"/>
+        <meta content="Portfolio Arnaud Besnard - développeur web" name="twitter:description"/>
+        <meta content="http://www.arnaudbesnard.fr/public/images/ArnaudBesnard.png" name="twitter:image"/>
+        <meta
+        content="Portfolio Arnaud Besnard - développeur web" name="twitter:title"/>
+        <!--Opengraph - Facebook-->
+        <meta content="Portfolio Arnaud Besnard - développeur web" property="og:title"/>
+        <meta content="website" property="og:type"/>
+        <meta content="http://www.arnaudbesnard.fr" property="og:url"/>
+        <meta content="http://www.arnaudbesnard.fr/public/images/ArnaudBesnard.png" property="og:image"/>
+        <meta content="Portfolio Arnaud Besnard - développeur web" property="og:description"/>
         <title>
             {% block title %}Arnaud Besnard - Développeur d'applications Web
             {% endblock %}
@@ -34,7 +53,7 @@
                 <a
                     class="navbar-brand" href="{{ path('homepage') }}">
                     {#<p id="myName">Arnaud Besnard</p>#}
-                    <img id="logo" src="{{ asset('public/img/logo.png') }}" alt="PhotoArnaudBesnard"/>
+                    <img id="logo" src="{{ asset('public/img/logo.png') }}" alt="logo Portfolio"/>
                 </a>
                 <ul class="navbar-nav mr-auto"></ul>
             </div>
