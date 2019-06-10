@@ -5,23 +5,29 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}"/>
-        <meta content="Portfolio Arnaud Besnard - développeur web" name="description"/>
-        <meta content="portfolio, développeur, création, internet, symfony, applications, web" name="keywords"/>
+        <meta content="Portfolio Arnaud Besnard - développeur web région de Lorient" name="description"/>
+        <meta content="portfolio, développeur, création, internet, symfony, applications, web, Plouay, Morbihan, Lorient, Symfony, wordpress, site, internet" name="keywords"/>
         <meta content="all" name="robots"/>
         <meta
         content="fr" name="language"/>
+        <!--Linkedin-->
+        <meta content="Arnaud Besnard Portfolio" property="og:title"/>
+        <meta content="http://www.arnaudbesnard.fr/public/img/ArnaudBesnard.png" property="og:image"/>
+        <meta content="Arnaud Besnard - Développeur Web" property="og:description"/>
+        <meta
+        content="http://www.arnaudbesnard.fr" property="og:url"/>
         <!--Twitter card-->
         <meta content="summary" name="twitter:card"/>
         <meta content="@arnaudbesnard" name="twitter:creator"/>
         <meta content="Portfolio Arnaud Besnard - développeur web" name="twitter:description"/>
-        <meta content="http://www.arnaudbesnard.fr/public/images/ArnaudBesnard.png" name="twitter:image"/>
+        <meta content="http://www.arnaudbesnard.fr/public/img/ArnaudBesnard.png" name="twitter:image"/>
         <meta
         content="Portfolio Arnaud Besnard - développeur web" name="twitter:title"/>
         <!--Opengraph - Facebook-->
         <meta content="Portfolio Arnaud Besnard - développeur web" property="og:title"/>
         <meta content="website" property="og:type"/>
         <meta content="http://www.arnaudbesnard.fr" property="og:url"/>
-        <meta content="http://www.arnaudbesnard.fr/public/images/ArnaudBesnard.png" property="og:image"/>
+        <meta content="http://www.arnaudbesnard.fr/public/img/ArnaudBesnard.png" property="og:image"/>
         <meta content="Portfolio Arnaud Besnard - développeur web" property="og:description"/>
         <title>
             {% block title %}Arnaud Besnard - Développeur d'applications Web
@@ -101,63 +107,43 @@
 
     <body>
         {% block body %}{% endblock %}
-        <!-- Footer -->
-        <footer
-            class="page-footer font-small cyan darken-3">
 
-            <!-- Footer Elements -->
-            <div
-                class="container">
-
-                <!-- Grid row-->
-                <div
-                    class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-md-12 py-5">
-                        <div
-                            class="mb-5 flex-center">
-
-                            <!-- Facebook -->
-                            <a class="fb-ic">
-                                <a href="https://www.facebook.com/ArnoDeveloppeurWeb/" target="blank">
-                                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                                </a>
+        <footer>
+            <div class="black-background">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="center">
+                            <h3>Localisation</h3>56240 Plouay<br/>France</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="center">
+                            <h3>Réseaux sociaux</h3>
+                            <a href="https://www.facebook.com/ArnoDeveloppeurWeb/" target="blank">
+                                <i class="fab fa-facebook-f fa-md fa-2x"></i>
                             </a>
                             <!-- Twitter -->
-                            <a class="tw-ic">
-                                <a href="https://twitter.com/arno_bsd" target="blank">
-                                    <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                                </a>
+                            <a href="https://twitter.com/arno_bsd" target="blank">
+                                <i class="fab fa-twitter fa-lg fa-2x"></i>
                             </a>
                             <!--Linkedin -->
-                            <a class="li-ic">
-                                <a href="https://www.linkedin.com/in/arnaud-besnard-developpeur/" target="blank">
-                                    <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                                </a>
+                            <a href="https://www.linkedin.com/in/arnaud-besnard-developpeur/" target="blank">
+                                <i class="fab fa-linkedin-in fa-lg fa-2x"></i>
                             </a>
                         </div>
                     </div>
-                    <!-- Grid column -->
-
+                    <div class="col-md-4">
+                        <div class="center">
+                            <h3>Copyright</h3>
+                            ©
+                            {{ 'now'|date('Y') }}
+                            Copyright:
+                            <a href="http://www.arnaudbesnard.fr/">
+                                ArnaudBesnard.fr</a><br/>
+                            <a href="{{ path('mentionslegales') }}">Mentions légales</a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Grid row-->
-
             </div>
-            <!-- Footer Elements -->
-
-            <!-- Copyright -->
-
-            <div class="footer-copyright text-center py-3">©
-                {{ 'now'|date('Y') }}
-                Copyright:
-                <a href="http://www.arnaudbesnard.fr/">
-                    ArnaudBesnard.fr</a>
-                -
-                <a href="{{ path('mentionslegales') }}">Mentions légales</a>
-            </div>
-            <!-- Copyright -->
-
         </footer>
         <!-- Footer -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
