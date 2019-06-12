@@ -1,73 +1,87 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<h1 id="competences">Mon CV</h1>
 
-<div class="text">
-	<div id="logo_pdf"><a href="{{ asset('public/files/CV_Arnaud_Besnard.pdf') }}"><img src="{{ asset('public/img/logo_pdf.png') }}"
-			 alt="Logo PDF" /></a></div><div class="center"><a href="{{ asset('public/files/CV_Arnaud_Besnard.pdf') }}">Télécharger mon CV</a></div>
-	<div class="text_experience">
-	<h2>Mon expérience :</h2>
-	<ul>
-		<li>Février 2018 à aujourd'hui : Réalisation de plusieurs sites web utilisant des langages
-			différents (HTML, CSS, Javascript, PHP, MySql), développement sur différents framework (Bootstrap, SASS, Symfony 3,
-			Angular).</li>
-		<li>Décembre 2011 à aujourd'hui : Pressier en flexographie dans une imprimerie, fabrication d'étiquettes
-			adhésives</li>
-		<li>Juillet 2011 à octobre 2011 : Saisonnier sapeur-pompier volontaire, centre de secours de Quiberon</li>
-		<li>Octobre 2006 à juillet 2011 : Infographiste / Développeur / Assistant multimédia au service communication
-			(État major des sapeurs-pompiers du Morbihan)</li>
-	</ul>
-	<hr />
-	<h2>Mes compétences :</h2>
-	<ul>
-		<li>Back-end :
-			<ul>
-				<li>Développement sites dynamiques - Langages PHP / MySQL</li>
-				<li>En cours de perfectionnement sur Symfony 3</li>
-			</ul>
-		</li>
-		<li>Frond-end :
-			<ul>
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>Javascript et Jquery</li>
-				<li>Framework Bootstrap</li>
-				<li>Intégration de maquettes Web</li>
-			</ul>
-		</li>
-		<li>Autres
-			<ul>
-				<li>Développement de sites web sur plateforme CMS Wordpress</li>
-				<li>Modification et création de thèmes personnalisés</li>
-				<li>Utilisation de Git</li>
-				<li>Travail avec la méthode agile</li>
-			</ul>
-			<ul>
-				<li>Maitrise de logiciels de graphisme tels que Photoshop / Illustrator / Indesign</li>
-			</ul>
-		</li>
-	</ul>
-	<hr />
-	<h2>Ma formation :</h2>
-	<ul>
-		<li>Mai 2019 : Obtention d'un titre professionnel de développeur intégrateur d'applications Web - Diplôme de niveau III</li>
-		<li>Depuis Août 2017 : Certificats de réussite cours HTML5/CSS3 - Intégration de maquettes web, PHP MySQL,
-			Javascript, wordpress et Symfony 3.</li>
-		<li>Septembre 2004 à juin 2006 : BTS Management des Unités Commerciales en alternance</li>
-		<li>Baccalauréat Génie Électrotechnique</li>
-		<li>BEP – CAP Génie Électrotechnique</li>
-	</ul>
-	<hr />
-	<h2>Loisirs :</h2>
-	<ul>
-		<li>Informatique (veille, création de sites internet)</li>
-		<li>Apprentissage de nouveaux langages informatique</li>
-		<li>Pratique du vélo tout terrain</li>
-		<li>Lecture</li>
-		<li>Bricolage</li>
-		<li>Pêche</li>
-	</ul>
-	</div>
-</div>
+    <h1 id="competences">Mon CV</h1>
+    <div class="text">
+        <div id="logo_pdf">
+            <a href="{{ asset('public/files/CV_Arnaud_Besnard.pdf') }}"><img src="{{ asset('public/img/logo_pdf.png') }}" alt="Logo PDF"/></a>
+        </div>
+        <div class="center">
+            <a href="{{ asset('public/files/CV_Arnaud_Besnard.pdf') }}">Télécharger mon CV</a>
+        </div>
+        <br/>
+        <div class="text_experience">
+            <div class="center">
+                <h2>Mon expérience :</h2>
+            </div>
+            <ul>
+                <li>Février 2018 à aujourd'hui : Réalisation de plusieurs sites web utilisant des langages
+                    			différents (HTML, CSS, Javascript, PHP, MySql), développement sur différents framework (Bootstrap, SASS, Symfony 3,
+                    			Angular).</li>
+                <li>Décembre 2011 à aujourd'hui : Pressier en flexographie dans une imprimerie, fabrication d'étiquettes
+                    			adhésives</li>
+                <li>Juillet 2011 à octobre 2011 : Saisonnier sapeur-pompier volontaire, centre de secours de Quiberon</li>
+                <li>Octobre 2006 à juillet 2011 : Infographiste / Développeur / Assistant multimédia au service communication
+                    			(État major des sapeurs-pompiers du Morbihan)</li>
+            </ul>
+            <hr/>
+            <div class="center">
+                <h2>Mes compétences :</h2>
+            </div>
+            <ul>
+                <li>Back-end :
+                    <ul>
+                        <li>Développement sites dynamiques - Langages PHP / MySQL</li>
+                        <li>En cours de perfectionnement sur Symfony 3</li>
+                    </ul>
+                </li>
+                <li>Frond-end :
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript et Jquery</li>
+                        <li>Framework Bootstrap</li>
+                        <li>Intégration de maquettes Web</li>
+                    </ul>
+                </li>
+                <li>Autres
+                    <ul>
+                        <li>Développement de sites web sur plateforme CMS Wordpress</li>
+                        <li>Modification et création de thèmes personnalisés</li>
+                        <li>Utilisation de Git</li>
+                        <li>Travail avec la méthode agile</li>
+                    </ul>
+                    <ul>
+                        <li>Maitrise de logiciels de graphisme tels que Photoshop / Illustrator / Indesign</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr/>
+            <div class="center">
+                <h2>Ma formation :</h2>
+            </div>
+            <ul>
+                <li>Mai 2019 : Obtention d'un titre professionnel de développeur intégrateur d'applications Web - Diplôme de niveau III</li>
+                <li>Depuis Août 2017 : Certificats de réussite cours HTML5/CSS3 - Intégration de maquettes web, PHP MySQL,
+                    			Javascript, wordpress et Symfony 3.</li>
+                <li>Septembre 2004 à juin 2006 : BTS Management des Unités Commerciales en alternance</li>
+                <li>Baccalauréat Génie Électrotechnique</li>
+                <li>BEP – CAP Génie Électrotechnique</li>
+            </ul>
+            <hr/>
+            <div class="center">
+                <h2>Loisirs :</h2>
+            </div>
+            <ul>
+                <li>Informatique (veille, création de sites internet)</li>
+                <li>Apprentissage de nouveaux langages informatique</li>
+                <li>Pratique du vélo tout terrain</li>
+                <li>Lecture</li>
+                <li>Bricolage</li>
+                <li>Pêche</li>
+            </ul>
+        </div>
+    </div>
+
 {% endblock %}

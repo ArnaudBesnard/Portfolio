@@ -15,10 +15,16 @@ body {
 .center {
     text-align: center;
 }
+.text-right{
+    text-align: right;
+}
 /*********************** HEADER ***********************/
 .bg-dark {
-    background-color: black !important;
+    /*background-color: black !important;*/
+    background-color: rgba(0, 0, 0, 0.80) !important;
     border-bottom: 1px solid gray;
+    /*border-top: 1px solid gray;*/
+    margin-top: 30px;
 }
 
 .nav-link:hover {
@@ -32,6 +38,23 @@ body {
 }
 #logoResponsive{
     display:none;
+}
+.header_social li{
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+#header_haut{
+    z-index:999;
+    height: 25px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    /*position:fixed;*/
+}
+#tel{
+    margin-right: 50px;
 }
 /*********************** PAGES ***********************/
 div:target {
@@ -227,7 +250,6 @@ footer {
         display:block;
         font-size: 2.5em;
         font-family: "Neon", serif;
-        margin-left: 50px;
     }
     #logo{
         display: none;
