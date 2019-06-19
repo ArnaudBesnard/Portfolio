@@ -3,70 +3,24 @@ html {
     scroll-behavior: smooth;
     width: 100%;
 }
+
 body {
     background-color: rgba(0, 0, 0, 0.90);
     color: white;
     margin: 0;
 }
+
 @font-face {
     font-family: 'Neon';
     src: url('../fonts/Neon Nanoborg.otf');
 }
+
 .center {
     text-align: center;
 }
-.text-right{
-    text-align: right;
-}
-/*********************** HEADER ***********************/
-#logo_responsive{
-    display:none;
-}
-.bg-dark {
-    /*background-color: black !important;*/
-    background-color: rgba(0, 0, 0, 0.80) !important;
-    border-bottom: 1px solid gray;
-    /*border-top: 1px solid gray;
-    margin-top: 30px;*/
-}
 
-.nav-link:hover {
-    border-bottom: 1px solid #0091EA;
-}
-a.nav-link:hover{
-    color: #0091EA !important;
-    transition-property: color; /* Active la transition sur background-color */
-    transition-duration: 1s; /* La transition dure 1s */
-}
-#logo{
-    display:block;
-    width:250px;
-    height:auto;
-    margin-left: 30px;
-}
-#logoResponsive{
-    display:none;
-}
-.header_social li{
-    display: inline;
-    list-style: none;
-    margin-left: 20px;
-}
-#header_haut{
-    z-index:999;
-    height: 25px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-}
-#tel{
-    margin-right: 50px;
-}
-/*********************** PAGES ***********************/
-div:target {
-    padding-top: 8em;
-    margin-top: -8em;
+.text-right {
+    text-align: right;
 }
 
 h1 {
@@ -75,16 +29,11 @@ h1 {
     margin-bottom: 25px;
 
 }
-h2{
+
+h2 {
     font-family: "Neon", serif;
     font-size: 2.5em;
-    color:#334D5C;
-}
-
-.titre {
-    text-align: center;
-    color: black;
-    font-size: 22px;
+    color: #334D5C;
 }
 
 h3 {
@@ -97,8 +46,72 @@ hr {
     width: 100%;
 }
 
+/*********************** HEADER ***********************/
+#logo_responsive {
+    display: none;
+}
+
+.bg-dark {
+    /*background-color: black !important;*/
+    background-color: rgba(0, 0, 0, 0.80) !important;
+    border-bottom: 1px solid gray;
+    /*border-top: 1px solid gray;
+    margin-top: 30px;*/
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #0091EA;
+}
+
+a.nav-link:hover {
+    color: #0091EA !important;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    /* Active la transition sur background-color */
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    /* La transition dure 1s */
+}
+
+#logo {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin-left: 30px;
+}
+
+#logoResponsive {
+    display: none;
+}
+
+.header_social li {
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+
+/*********************** PAGES ***********************/
+div:target {
+    padding-top: 8em;
+    margin-top: -8em;
+}
+
+.close {
+    cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titre {
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+
 #myName {
-    display:none;
+    display: none;
     font-size: 2.5em;
     font-family: "Neon", serif;
     margin-left: 50px;
@@ -125,13 +138,13 @@ hr {
     z-index: 999
 }
 
-#titre_presta {
+.titre_presta {
     text-align: center;
     color: gray;
     font-weight: bold;
 }
 
-#text_presta {
+.text_presta {
     text-align: center;
     color: black;
 }
@@ -140,9 +153,7 @@ hr {
     width: 150px;
     height: auto;
     overflow: hidden;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100x;
+    border-radius: 100px;
     margin-top: 30px;
 }
 
@@ -156,7 +167,7 @@ hr {
     margin: auto;
 }
 
-.contenuPage {
+#contenuPage {
     width: 1024px;
     margin: auto;
 }
@@ -193,7 +204,7 @@ hr {
 .text {
     font-size: 16px;
     color: black;
-    background-color: white;
+    background-color: lightgray;
     padding: 20px;
     width: 80%;
     margin: auto;
@@ -235,7 +246,7 @@ hr {
     margin: auto;
 }
 
-#P1 {
+.projet {
     width: 300px;
     height: 198px;
 }
@@ -252,12 +263,22 @@ footer {
 .py-5 {
     padding-bottom: 1rem !important;
 }
-.cv{
+
+.cv {
+    border-bottom: 1px solid #0091EA;
+    width: 290px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.listcv {
     list-style-type: square;
 }
-strong{
+
+strong {
     color: #1BA3B9;
 }
+
 /**********************************************************/
 /************************RESPONSIVE************************/
 /**********************************************************/
@@ -265,38 +286,46 @@ strong{
 @media screen and (min-width: 319px) and (max-width: 769px) {
 
     #myName {
-        display:block;
+        display: block;
         font-size: 2.5em;
         font-family: "Neon", serif;
     }
-    #logo{
+
+    #logo {
         display: none;
         width: 250px;
         margin: auto;
         /*margin-left: 20px;*/
     }
-    #logo_responsive{
-        display:block;
-        z-index:999;
-        position:fixed;
+
+    #logo_responsive {
+        display: block;
+        z-index: 999;
+        position: fixed;
     }
-    .contenu{
+
+    .contenu {
         display: none;
     }
+
     .contenuPage {
-        margin-top:100px;
-        width:90%;
+        margin-top: 100px;
+        width: 90%;
     }
-    #logos_technos{
-        display:none;
+
+    #logos_technos {
+        display: none;
     }
-    #P1{
+
+    #P1 {
         width: 200px;
         height: auto;
     }
-    .text_experience{
-        display:none;
+
+    .text_experience {
+        display: none;
     }
+
     .text {
         font-size: 14px;
         color: black;
@@ -307,7 +336,8 @@ strong{
         text-align: left;
         /*box-shadow: 8px 8px 8px rgb(102, 102, 102);*/
     }
-    #aPropos{
-        margin-top:20px;
+
+    #aPropos {
+        margin-top: 20px;
     }
 }
