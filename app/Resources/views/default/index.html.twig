@@ -7,8 +7,8 @@
         <h2 class="ml3">sites et applications web...</h2>
     </div>
     <div id="contenuPage" v-if="!isHidden">
-        <button aria-label="Close" class="close" type="button" v-on:click="isHidden = true">
-            <span aria-hidden="true">x</span>
+        <button title="Fermer la présentation" aria-label="Close" class="close" type="button" v-on:click="isHidden = true">
+            <span>x</span>
         </button>
 
         {#<p id="myName">Arnaud Besnard</p>#}
@@ -40,4 +40,5 @@
             </div>
         </div>
     </div>
+
 {% endblock %}

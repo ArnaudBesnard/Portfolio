@@ -75,7 +75,7 @@
                             Accueil</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a aria-expanded="true" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">
+                        <a id="menu_der" aria-expanded="true" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">
                             <i class='fas fa-code'></i>
                             A propos
                         </a>
@@ -154,6 +154,13 @@
             <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
             <script src="{{ asset('public/js/app.js') }}"></script>
             <script src="{{ asset('public/js/title.js') }}"></script>
+            {#
+            <script>
+                $('#menu_der').mouseover(function() {
+                $(this).dropdown('toggle');
+                });
+            </script>
+            #}
         {% endblock %}
    
 </html>
